@@ -1,40 +1,31 @@
-let decreasBtn = document.querySelector(".decrease");
-let increaseBtn = document.querySelector(".increase");
-let resetBtn = document.querySelector(".reset");
-let counter = document.querySelector(".counter")
+let btns = document.querySelectorAll(".btn");
+let counter = document.querySelector(".counter");
+console.log(btns);
+
+let count = 0;
 
 
-let i = 0;
-counter.style.fontSize = "35px"
-counter.style.fontWeight = 'bold'
-counter.textContent = i;
+btns.forEach(item => {
+    item.addEventListener('click', function (event) {
+        let target = event.currentTarget.classList;
+        if (target.contains("increase")) {
+            count++;
+        } else if (target.contains("decrease")) {
+            count--;
+        } else {
+            count = 0;
+        }
+        if (count > 0) {
+            counter.style.color = "green"
+        }
+        else if (count < 0) {
+            counter.style.color = "red";
+        }
+        else {
+            counter.style.color = "black";
 
-resetBtn.addEventListener('click', function () {
-    i = 0;
-    counter.textContent = i;
-    chackTheSign()
+        }
+        counter.textContent = count;
+
+    })
 })
-
-increaseBtn.addEventListener('click', function () {
-    i++;
-    counter.textContent = i;
-    chackTheSign();
-})
-
-decreasBtn.addEventListener('click', function () {
-    i--;
-    counter.textContent = i;
-    chackTheSign();
-})
-
-function chackTheSign() {
-    if (i > 0) {
-        counter.style.color = "green";
-    } else if (i < 0) {
-        counter.style.color = "red";
-    } else {
-        counter.style.color = "black";
-
-    }
-}
-
