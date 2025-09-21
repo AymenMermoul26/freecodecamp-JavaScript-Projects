@@ -33,3 +33,9 @@ body {
     align-items: center;
     gap: 25px;
 }
+
+.counter {
+    font-size: 45px;
+    font-weight: bold;
+    
+}
