@@ -1,0 +1,111 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    background-color: #f0f9ffff;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+section.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+
+.title h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.title .underline {
+    width: 80px;
+    height: 4px;
+    background-color: #41d2ff;
+    margin: 6px auto;
+}
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+article .img-cont {
+    width: 95px;
+    height: 95px;
+    overflow: hidden;
+    box-shadow: 7px -3px 0px #52ddff;
+    border-radius: 50%;
+}
+
+article .img-cont img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+article .info {
+    text-align: center;
+}
+
+article .info .autoer {
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+article .info .job {
+    font-size: 12px;
+    color: #00bcb6;
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+article .info .job-info {
+    font-size: 15px;
+    color: #7d7d7d;
+    margin-top: 10px;
+}
+
+article .btn-cont {
+    display: flex;
+    gap: 15px;
+}
+
+article .btn-cont button {
+    font-size: 9px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #00d3ff;
+}
+
+article .randomBtn {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px;
+    background-color: #eafffa;
+    border: 1px solid #c9c9c9;
+    border-radius: 4px;
+}
