@@ -1,0 +1,99 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(pexels-marek-piwnicki-3907296-30359239.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+header {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .hero {
+    padding: 20px;
+    background-color: #d8d8d8b7;
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+header .hero h2 {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+header .hero button {
+    font-size: 14px;
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+header .hero button:hover {
+    color: white;
+    background-color: #cb6a63ff;
+}
+
+.modal {
+    top: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #70909370;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+}
+
+.visibil {
+    visibility: visible;
+}
+
+.modal .modal-container {
+    position: relative;
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    background-color: #f3f3f3ff;
+    border-radius: 6px;
+}
+
+.modal .modal-container h3 {
+    width: fit-content;
+    margin: 21px auto;
+}
+
+.modal .modal-container button {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #a40813;
+}
