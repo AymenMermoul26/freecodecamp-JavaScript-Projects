@@ -1,0 +1,139 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e5fff3ff;
+}
+
+/* Nav */
+
+nav {
+    background-color: #f9f9f9;
+    box-shadow: 0px -2px 20px #a0a0a0;
+}
+
+nav .nav-center {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    nav .nav-center {
+        flex-direction: column;
+    }
+}
+
+.nav-center .logo {
+    font-size: 20px;
+}
+
+.nav-center .logo h3 {
+    font-weight: 400;
+    letter-spacing: -2px;
+}
+
+.nav-center .logo h3 span {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 4px;
+    font-size: 26px;
+    color: #ad3a3a;
+}
+
+.nav-center .menu {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .nav-center .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .nav-center .menu {
+        display: block;
+        transition: .3s;
+    }
+
+    .nav-center .menu:hover {
+        transform: rotate(90deg);
+
+    }
+}
+
+/*  links */
+
+.nav-center .links {
+    display: flex;
+    text-transform: capitalize;
+    transition: .4s;
+}
+
+.nav-center .links li {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .4s;
+}
+
+@media screen and (max-width: 767px) {
+    .nav-center .links {
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+    }
+
+    .nav-center .links li:hover {
+        background-color: #9898986d;
+        padding-left: 20px;
+    }
+
+    .hide {
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+
+
+.nav-center .social-links {
+    display: flex;
+    font-size: 20px;
+}
+
+
+.nav-center .social-links li i {
+    padding: 7px;
+}
+
+@media screen and (max-width: 767px) {
+    .nav-center .social-links {
+        display: none;
+    }
+}
+
+
