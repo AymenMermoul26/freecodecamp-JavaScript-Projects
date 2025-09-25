@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    font-family: "Dancing Script", cursive;
+    font-style: normal;
+    background-color: #e5fff3ff;
+}
+
+/*  */
+
+main {
+    min-height: 100vh;
+    background-color: #acacf2e1;
+    display: grid;
+    place-items: center;
+}
+
+main .questions {
+    width: 50%;
+    background-color: #cececea0;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+main .questions .title {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    color: #967e9da8;
+}
+
+main .questions .questions-container {
+    margin-top: 20px;
+    display: grid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main .questions .question-box {
+    width: 80%;
+    margin: auto;
+    padding: 15px 20px;
+    background-color: #fefefe96;
+    border-radius: 6px;
+    box-shadow: 0px 2px 10px 0px #848484;
+    margin-bottom: 20px;
+}
+
+main .questions .question-box .question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .questions .question-box .question-header .question-btns {
+    font-size: 15px;
+    border: none;
+    background-color: transparent;
+}
+
+main .questions .question-box .question-header .question-btns span {
+    color: #614e8ed4;
+    border: 2px solid;
+    padding: 2px;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+
+main .questions .question-box .question-header .question-btns span:hover {
+    transform: rotate(90deg);
+}
+
+
+main .questions .question-box .question-answer p {
+    font-size: 14px;
+    padding: 10px 0px;
+    margin-top: 10px;
+    color: #8283abb8;
+    border-top: 1px solid #33333398;
+}
+
+
+
+
+/* Class For JavaScript */
+
+.question-answer {
+    display: none;
+
+}
+
+.show-text .question-answer {
+    display: block;
+}
+
+.minus-btn {
+    display: none;
+}
+
+.show-text .minus-btn {
+    display: block;
+}
+
+.plus-btn {
+    display: block;
+
+}
+
+.show-text .plus-btn {
+    display: none;
+}
